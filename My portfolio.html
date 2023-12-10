@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/portfolioindex.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./My portfolio_files/portfoliostyle.css">
+    <title>My portfolio</title>
+</head>
+<body>
+    <section>
+        <div class="main-screeen-container">
+        <div class="Top-Menu">  
+        <nav>
+            <a href="http://127.0.0.1:5500/portfolioindex.html#home">Home</a>
+            <a href="http://127.0.0.1:5500/portfolioindex.html#about">About</a>
+            <a href="http://127.0.0.1:5500/portfolioindex.html#social" class="logo gradient">A</a>
+            <a href="http://127.0.0.1:5500/portfolioindex.html#work">Work</a>
+            <a href="http://127.0.0.1:5500/portfolioindex.html#contact">Contact</a>
+        </nav>
+        <div class="hero">
+            <p> I am a web developer</p>
+            <button fdprocessedid="iy8tva">Hire me</button><button fdprocessedid="ztl1ik">Download Resume</button>
+        </div>
+    </div></div></section>
+    <section>
+        <h2>About me</h2>
+        <p>
+            I am Shreeya Shetty. I'm currently pursuing the third year of my bachelor of engineering degree.I work with HTML and CSS.
+        </p>
+    </section>
+    <section>
+        <div><h2>Get in Touch</h2>
+        <p>Feel free to call or send me an email for any queries</p>
+        <p>Phone number</p>
+        <p>Email</p>
+    </div>
+    <div><h2>Send me a message</h2>
+    <form action="http://127.0.0.1:5500/portfolioindex.html#">
+        <input type="text" fdprocessedid="n4vhkv"><input type="email" fdprocessedid="4kg53"><input type="text" fdprocessedid="bvl51u"><input type="text" fdprocessedid="hpxckn">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button type="submit" fdprocessedid="b4r6ol">Send message</button>
+    </form></div>
+    </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
